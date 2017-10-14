@@ -1,0 +1,22 @@
+package com.exanmple.activitytest;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+public class ThirdActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        //setContentView(R.layout.third_layout);
+        //Button button3 = (Button)findViewById(R.id.Button_3);
+        //button3.setOnClickListener(new View.OnClickListener() {
+           // @Override
+           // public void onClick(View v) {
+              //  Intent intent = new Intent(Intent.ACTION_DIAL);
+              //  intent.setData(Uri.parse("tel:10086"));
+               // startActivity(intent);
+            }
+        //});
+    }
+//}
