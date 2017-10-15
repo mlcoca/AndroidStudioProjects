@@ -2,7 +2,6 @@ package com.exanmple.activitytest;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivity extends BaseActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -55,14 +54,16 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        Log.d("FirstActivity",this.toString());
+        Log.d("FirstActivity","Task id is " + getTaskId());
+        //Log.d("FirstActivity",this.toString());
         setContentView(R.layout.first_layout);
         Button button1 = (Button)findViewById(R.id.Button_1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
-                startActivity(intent);
+                SecondActivity.actionStart(FirstActivity.this,"data1","data2");
+                //Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
+                //startActivity(intent);
                 //Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
                 //startActivityForResult(intent,1);
                 //String data = "Hello SecondActivity";
