@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         boolean isRemember = pref.getBoolean("remember_password",false);
         if(isRemember){
             String account = pref.getString("account","");
-            String pasword = pref.getString("password","");
+            String password = pref.getString("password","");
             accountEdit.setText(account);
             passwordEdit.setText(password);
             rememberPass.setChecked(true);
