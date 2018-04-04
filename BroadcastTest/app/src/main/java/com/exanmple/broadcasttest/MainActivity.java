@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         registerReceiver(networkChangeReceiver,intentFilter);
     }
 
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
