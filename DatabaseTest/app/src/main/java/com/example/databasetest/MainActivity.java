@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 ContentValues values = new ContentValues();
                 values.put("price", 10.99);
                 db.update("Book", values, "name = ?",
-                        new String[] { "The Da Vinci Code" });
+                        new String[] { "heihiehei" });
             }
         });
 
